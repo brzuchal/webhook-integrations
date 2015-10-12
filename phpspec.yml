@@ -1,0 +1,11 @@
+extensions:
+    - PhpSpec\Extension\CodeCoverageExtension
+
+suites:
+  types:
+    namespace: MBrzuchalski\WebHookIntegration
+    psr4_prefix: MBrzuchalski\WebHookIntegration
+
+code_coverage:
+    output: tests/coverage/phpspec.cov
+    format: php

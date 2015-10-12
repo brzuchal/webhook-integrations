@@ -1,0 +1,26 @@
+{
+    "name": "mbrzuchalski/webhook-integrations",
+    "description": "Wekbook based integrations",
+    "require": {
+        "php": ">=5.5"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "^2.2",
+        "henrikbjorn/phpspec-code-coverage": "~1.0",
+        "squizlabs/php_codesniffer": "^2.3",
+        "phpunit/phpunit": "4.7.7",
+        "phpunit/phpcov": "*",
+        "jakub-onderka/php-parallel-lint": "0.*",
+        "jakub-onderka/php-console-highlighter": "0.*",
+        "satooshi/php-coveralls": "dev-master",
+        "clover/dump": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "MBrzuchalski\\WebHookIntegration\\": "src/"
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
