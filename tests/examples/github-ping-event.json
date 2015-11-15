@@ -1,93 +1,58 @@
 {
-  "ref": "refs/heads/master",
-  "before": "0000000000000000000000000000000000000000",
-  "after": "fa7741d04b55dec898f88d5882475779ee5849bd",
-  "created": true,
-  "deleted": false,
-  "forced": true,
-  "base_ref": null,
-  "compare": "https://github.com/mbrzuchalski/webhook-test/compare/73898d8292d4^...fa7741d04b55",
-  "commits": [
-    {
-      "id": "73898d8292d47056f848849f449fb3fd3c444c90",
-      "distinct": true,
-      "message": "first commit",
-      "timestamp": "2015-11-15T12:41:39+01:00",
-      "url": "https://github.com/mbrzuchalski/webhook-test/commit/73898d8292d47056f848849f449fb3fd3c444c90",
-      "author": {
-        "name": "Michał Brzuchalski",
-        "email": "michal.brzuchalski@gmail.com",
-        "username": "mbrzuchalski"
-      },
-      "committer": {
-        "name": "Michał Brzuchalski",
-        "email": "michal.brzuchalski@gmail.com",
-        "username": "mbrzuchalski"
-      },
-      "added": [
-        "README.md"
-      ],
-      "removed": [],
-      "modified": []
+  "zen": "Keep it logically awesome.",
+  "hook_id": 6409842,
+  "hook": {
+    "url": "https://api.github.com/repos/mbrzuchalski/webhook-test/hooks/6409842",
+    "test_url": "https://api.github.com/repos/mbrzuchalski/webhook-test/hooks/6409842/test",
+    "ping_url": "https://api.github.com/repos/mbrzuchalski/webhook-test/hooks/6409842/pings",
+    "id": 6409842,
+    "name": "web",
+    "active": true,
+    "events": [
+      "push"
+    ],
+    "config": {
+      "url": "http://requestb.in/1e0ya3y1",
+      "content_type": "json",
+      "insecure_ssl": "0",
+      "secret": ""
     },
-    {
-      "id": "fa7741d04b55dec898f88d5882475779ee5849bd",
-      "distinct": true,
-      "message": "first commit",
-      "timestamp": "2015-11-15T12:41:54+01:00",
-      "url": "https://github.com/mbrzuchalski/webhook-test/commit/fa7741d04b55dec898f88d5882475779ee5849bd",
-      "author": {
-        "name": "Michał Brzuchalski",
-        "email": "michal.brzuchalski@gmail.com",
-        "username": "mbrzuchalski"
-      },
-      "committer": {
-        "name": "Michał Brzuchalski",
-        "email": "michal.brzuchalski@gmail.com",
-        "username": "mbrzuchalski"
-      },
-      "added": [],
-      "removed": [],
-      "modified": [
-        "README.md"
-      ]
-    }
-  ],
-  "head_commit": {
-    "id": "fa7741d04b55dec898f88d5882475779ee5849bd",
-    "distinct": true,
-    "message": "first commit",
-    "timestamp": "2015-11-15T12:41:54+01:00",
-    "url": "https://github.com/mbrzuchalski/webhook-test/commit/fa7741d04b55dec898f88d5882475779ee5849bd",
-    "author": {
-      "name": "Michał Brzuchalski",
-      "email": "michal.brzuchalski@gmail.com",
-      "username": "mbrzuchalski"
+    "last_response": {
+      "code": null,
+      "status": "unused",
+      "message": null
     },
-    "committer": {
-      "name": "Michał Brzuchalski",
-      "email": "michal.brzuchalski@gmail.com",
-      "username": "mbrzuchalski"
-    },
-    "added": [],
-    "removed": [],
-    "modified": [
-      "README.md"
-    ]
+    "updated_at": "2015-11-15T11:40:14Z",
+    "created_at": "2015-11-15T11:40:14Z"
   },
   "repository": {
     "id": 46214211,
     "name": "webhook-test",
     "full_name": "mbrzuchalski/webhook-test",
     "owner": {
-      "name": "mbrzuchalski",
-      "email": "michal.brzuchalski@gmail.com"
+      "login": "mbrzuchalski",
+      "id": 3149753,
+      "avatar_url": "https://avatars.githubusercontent.com/u/3149753?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbrzuchalski",
+      "html_url": "https://github.com/mbrzuchalski",
+      "followers_url": "https://api.github.com/users/mbrzuchalski/followers",
+      "following_url": "https://api.github.com/users/mbrzuchalski/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mbrzuchalski/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mbrzuchalski/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mbrzuchalski/subscriptions",
+      "organizations_url": "https://api.github.com/users/mbrzuchalski/orgs",
+      "repos_url": "https://api.github.com/users/mbrzuchalski/repos",
+      "events_url": "https://api.github.com/users/mbrzuchalski/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mbrzuchalski/received_events",
+      "type": "User",
+      "site_admin": false
     },
     "private": false,
     "html_url": "https://github.com/mbrzuchalski/webhook-test",
     "description": "",
     "fork": false,
-    "url": "https://github.com/mbrzuchalski/webhook-test",
+    "url": "https://api.github.com/repos/mbrzuchalski/webhook-test",
     "forks_url": "https://api.github.com/repos/mbrzuchalski/webhook-test/forks",
     "keys_url": "https://api.github.com/repos/mbrzuchalski/webhook-test/keys{/key_id}",
     "collaborators_url": "https://api.github.com/repos/mbrzuchalski/webhook-test/collaborators{/collaborator}",
@@ -123,9 +88,9 @@
     "notifications_url": "https://api.github.com/repos/mbrzuchalski/webhook-test/notifications{?since,all,participating}",
     "labels_url": "https://api.github.com/repos/mbrzuchalski/webhook-test/labels{/name}",
     "releases_url": "https://api.github.com/repos/mbrzuchalski/webhook-test/releases{/id}",
-    "created_at": 1447585651,
+    "created_at": "2015-11-15T11:07:31Z",
     "updated_at": "2015-11-15T11:07:31Z",
-    "pushed_at": 1447587724,
+    "pushed_at": "2015-11-15T11:07:31Z",
     "git_url": "git://github.com/mbrzuchalski/webhook-test.git",
     "ssh_url": "git@github.com:mbrzuchalski/webhook-test.git",
     "clone_url": "https://github.com/mbrzuchalski/webhook-test.git",
@@ -145,13 +110,7 @@
     "forks": 0,
     "open_issues": 0,
     "watchers": 0,
-    "default_branch": "master",
-    "stargazers": 0,
-    "master_branch": "master"
-  },
-  "pusher": {
-    "name": "mbrzuchalski",
-    "email": "michal.brzuchalski@gmail.com"
+    "default_branch": "master"
   },
   "sender": {
     "login": "mbrzuchalski",

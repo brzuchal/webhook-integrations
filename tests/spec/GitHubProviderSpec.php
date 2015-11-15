@@ -32,7 +32,7 @@ class GitHubProviderSpec extends ObjectBehavior
 
     function it_creates_PushEvent_from_request()
     {
-        $payload = file_get_contents(__DIR__ . '/../examples/gitlab-push-event.json');
+        $payload = file_get_contents(__DIR__ . '/../examples/github-push-event.json');
         $request = new Request(
             'POST',
             '/test',
@@ -79,10 +79,10 @@ class GitHubProviderSpec extends ObjectBehavior
             'POST',
             '/test',
             [
-                'X-Github-Event' => 'push',
+                'X-Github-Event' => '',
                 'Content-Type' => 'application/json'
             ],
-            '{"object_kind":null}'
+            '{}'
         );
         $this->shouldThrow(UnexpectedValueException::class)->during('create', [$request]);
     }

@@ -18,11 +18,14 @@ abstract class Person
     private $name;
     /** @var string */
     private $email;
+    /** @var null|string */
+    private $username;
 
-    public function __construct($name, $email)
+    public function __construct($name, $email, $username = null)
     {
         $this->name = $name;
         $this->email = $email;
+        $this->username = $username;
     }
 
     /**
@@ -39,5 +42,13 @@ abstract class Person
     public function getEmail()
     {
         return $this->email;
+    }
+
+    /**
+     * @return null|string
+     */
+    public function getUsername()
+    {
+        return $this->username;
     }
 }

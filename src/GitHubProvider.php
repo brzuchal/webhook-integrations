@@ -7,9 +7,12 @@
  */
 namespace WebHookEvents\RepositoryEvents;
 
+use DateTime;
 use Psr\Http\Message\RequestInterface;
 use stdClass;
 use UnexpectedValueException;
+use WebHookEvents\RepositoryEvents\Entity\Author;
+use WebHookEvents\RepositoryEvents\Entity\Commit;
 use WebHookEvents\RepositoryEvents\Entity\Pusher;
 use WebHookEvents\RepositoryEvents\Entity\Repository;
 
@@ -63,11 +66,22 @@ class GitHubProvider extends ProviderBase
     }
 
     /**
+     * TODO: implement commit added, modified and removed
      * @param stdClass $payload
      * @return PushEvent
      */
     public function createPushEvent(stdClass $payload)
     {
-        return new PushEvent('a', 'b', 'c', [], new Pusher('me', 'me@me'), new Repository('d', 'git@github.com:test', 'http://github.com'));
+        $commits = [];
+        foreach ($payload->commits as $commit) {
+            $timestamp = DateTime::createFromFormat(DateTime::ATOM, $commit->timestamp);
+            $author = new Author($commit->author->name, $commit->author->email, $commit->author->username);
+            $commits[] = new Commit($commit->id, $commit->message, $timestamp, $author, $commit->url);
+        }
+        $pusher = new Pusher($payload->pusher->name, $payload->pusher->email);
+        $repository = new Repository($payload->repository->name, $payload->repository->url, $payload->repository->homepage ?: $payload->repository->html_url);
+        $pushEvent = new PushEvent($payload->ref, $payload->before, $payload->after, $commits, $pusher, $repository);
+
+        return $pushEvent;
     }
 }
