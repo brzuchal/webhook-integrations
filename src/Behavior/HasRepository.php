@@ -5,11 +5,13 @@
  * Date: 12.10.15
  * Time: 19:07
  */
-namespace MBrzuchalski\WebHookIntegration\Entity;
+namespace WebHookEvents\RepositoryEvents\Behavior;
+
+use WebHookEvents\RepositoryEvents\Entity\Repository;
 
 /**
  * Trait HasRepository
- * @package MBrzuchalski\WebHookIntegration\Entity
+ * @package WebHookEvents\RepositoryEvents\Behavior
  * @author Michał Brzuchalski <michal.brzuchalski@gmail.com>
  */
 trait HasRepository

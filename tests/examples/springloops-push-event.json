@@ -1,0 +1,33 @@
+{
+  "invokerEmail": "m.brzuchalski@notilio.com",
+  "projectURL": "https://notilio.springloops.io/project/63745",
+  "newCommitsCount": "1",
+  "beforePushRevision": "2c050da886c7b049a60fa7cf2b673b4ca8b1af96",
+  "commitsCount": "1",
+  "invoker": "Michał B.",
+  "branch": "master",
+  "unsubscribeURL": "https://notilio.springloops.io:443/unsubscribe?token=receiverToken&type=COMMITS&projectId=63745",
+  "repositoryURL": "ssh://sls@slsapp.com:1234/notilio/notilio.git",
+  "invokerProfileURL": "https://notilio.springloops.io/profile/39650",
+  "pushURL": "https://notilio.springloops.io/project/63745/git/source/compare/revisions/2c050da886c7b049a60fa7cf2b673b4ca8b1af96,53351b14131f332130c7b05d8180f6a04658b042",
+  "afterPushRevision": "53351b14131f332130c7b05d8180f6a04658b042",
+  "domain": "springloops.io",
+  "subdomain": "notilio",
+  "invokerSmallAvatarURL": "https://notilio.springloops.io:443/image-server/user/0/0/3/9/6/5/0/c427d1eca0932548d52b12b6e6398850/w/22/22/AVATAR.png?ts=1383062767600",
+  "invokerId": "39650",
+  "pushDate": "2015-11-05T18:28:45+0100",
+  "projectName": "Application",
+  "projectId": "63745",
+  "accountURL": "https://notilio.springloops.io",
+  "commits": {
+    "commit": {
+      "revision": "53351b14131f332130c7b05d8180f6a04658b042",
+      "commitMessage": "Composer json changes",
+      "committerId": "39650",
+      "committerEmail": "m.brzuchalski@notilio.com",
+      "committerName": "Michał B.",
+      "commitDate": "2015-11-05T18:28:40+0100",
+      "commitURL": "https://notilio.springloops.io/project/63745/git/source/commit/master/53351b14131f332130c7b05d8180f6a04658b042"
+    }
+  }
+}

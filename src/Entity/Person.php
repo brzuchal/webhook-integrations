@@ -5,11 +5,11 @@
  * Date: 12.10.15
  * Time: 20:31
  */
-namespace MBrzuchalski\WebHookIntegration\Entity;
+namespace WebHookEvents\RepositoryEvents\Entity;
 
 /**
  * Class Person
- * @package MBrzuchalski\WebHookIntegration\Entity
+ * @package WebHookEvents\RepositoryEvents\Entity
  * @author Michał Brzuchalski <michal.brzuchalski@gmail.com>
  */
 abstract class Person

@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\MBrzuchalski\WebHookIntegration\Entity;
+namespace spec\WebHookEvents\RepositoryEvents\Entity;
 
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
@@ -14,7 +14,7 @@ class RepositorySpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        $this->shouldHaveType('MBrzuchalski\WebHookIntegration\Entity\Repository');
+        $this->shouldHaveType('WebHookEvents\RepositoryEvents\Entity\Repository');
     }
 
     function it_can_getName()

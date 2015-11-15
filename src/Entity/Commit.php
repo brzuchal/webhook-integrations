@@ -5,13 +5,13 @@
  * Date: 12.10.15
  * Time: 19:04
  */
-namespace MBrzuchalski\WebHookIntegration\Entity;
+namespace WebHookEvents\RepositoryEvents\Entity;
 
 use DateTime;
 
 /**
  * Class Commit
- * @package MBrzuchalski\WebHookIntegration\Entity
+ * @package WebHookEvents\RepositoryEvents\Entity
  * @author Michał Brzuchalski <michal.brzuchalski@gmail.com>
  */
 class Commit

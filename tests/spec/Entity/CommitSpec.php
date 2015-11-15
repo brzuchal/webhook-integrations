@@ -1,9 +1,9 @@
 <?php
 
-namespace spec\MBrzuchalski\WebHookIntegration\Entity;
+namespace spec\WebHookEvents\RepositoryEvents\Entity;
 
 use DateTime;
-use MBrzuchalski\WebHookIntegration\Entity\Author;
+use WebHookEvents\RepositoryEvents\Entity\Author;
 use PhpSpec\ObjectBehavior;
 
 class CommitSpec extends ObjectBehavior
@@ -15,7 +15,7 @@ class CommitSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        $this->shouldHaveType('MBrzuchalski\WebHookIntegration\Entity\Commit');
+        $this->shouldHaveType('WebHookEvents\RepositoryEvents\Entity\Commit');
     }
 
     function it_can_getId()

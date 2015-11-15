@@ -5,26 +5,28 @@
  * Date: 12.10.15
  * Time: 20:41
  */
-use MBrzuchalski\WebHookIntegration\Entity\Author;
-use MBrzuchalski\WebHookIntegration\Entity\Commit;
-use MBrzuchalski\WebHookIntegration\Entity\Pusher;
-use MBrzuchalski\WebHookIntegration\Entity\PushEvent;
-use MBrzuchalski\WebHookIntegration\Entity\Repository;
-use MBrzuchalski\WebHookIntegration\Provider\GitLab;
+use function GuzzleHttp\Psr7\parse_request;
+use WebHookEvents\RepositoryEvents\Entity\Author;
+use WebHookEvents\RepositoryEvents\Entity\Commit;
+use WebHookEvents\RepositoryEvents\Entity\Pusher;
+use WebHookEvents\RepositoryEvents\Entity\Repository;
+use WebHookEvents\RepositoryEvents\GitLabProvider;
+use WebHookEvents\RepositoryEvents\PushEvent;
 
 /**
  * Class GitLab
  * @author Michał Brzuchalski <michal.brzuchalski@gmail.com>
  */
-class GitLabTest extends PHPUnit_Framework_TestCase
+class GitLabPushEventTest extends PHPUnit_Framework_TestCase
 {
     /** @var PushEvent */
     private $pushEvent;
 
     public function setUp()
     {
-        $pushEventJsonString = file_get_contents(__DIR__ . '/../examples/gitlab-push-event.json');
-        $this->pushEvent = GitLab::createFromJson($pushEventJsonString);
+        $request = parse_request(file_get_contents(__DIR__ . '/../examples/gitlab-push-event.req'));
+        $provider = new GitLabProvider();
+        $this->pushEvent = $provider->create($request);
     }
 
     public function testPushEventObjectIsProper()

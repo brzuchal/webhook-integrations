@@ -1,10 +1,10 @@
 <?php
 
-namespace spec\MBrzuchalski\WebHookIntegration\Entity;
+namespace spec\WebHookEvents\RepositoryEvents\Event;
 
-use MBrzuchalski\WebHookIntegration\Entity\Commit;
-use MBrzuchalski\WebHookIntegration\Entity\Pusher;
-use MBrzuchalski\WebHookIntegration\Entity\Repository;
+use WebHookEvents\RepositoryEvents\Entity\Commit;
+use WebHookEvents\RepositoryEvents\Entity\Pusher;
+use WebHookEvents\RepositoryEvents\Entity\Repository;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
@@ -17,7 +17,7 @@ class PushEventSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        $this->shouldHaveType('MBrzuchalski\WebHookIntegration\Entity\PushEvent');
+        $this->shouldHaveType('WebHookEvents\RepositoryEvents\Event\PushEvent');
     }
 
     function it_can_getRef()

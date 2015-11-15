@@ -5,14 +5,19 @@
  * Date: 12.10.15
  * Time: 18:41
  */
-namespace MBrzuchalski\WebHookIntegration\Entity;
+namespace WebHookEvents\RepositoryEvents;
+
+use WebHookEvents\RepositoryEvents\Behavior\HasCommits;
+use WebHookEvents\RepositoryEvents\Behavior\HasRepository;
+use WebHookEvents\RepositoryEvents\Entity\Pusher;
+use WebHookEvents\RepositoryEvents\Entity\Repository;
 
 /**
- * Class PushEvent
- * @package MBrzuchalski\WebHookIntegration\Entity
+ * Class Push
+ * @package WebHookEvents\RepositoryEvents\Event
  * @author Michał Brzuchalski <michal.brzuchalski@gmail.com>
  */
-class PushEvent
+class PushEvent implements Event
 {
     use HasRepository;
     use HasCommits;

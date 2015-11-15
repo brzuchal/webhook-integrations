@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\MBrzuchalski\WebHookIntegration\Entity;
+namespace spec\WebHookEvents\RepositoryEvents\Entity;
 
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
@@ -17,7 +17,7 @@ class AuthorSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        $this->shouldHaveType('MBrzuchalski\WebHookIntegration\Entity\Author');
+        $this->shouldHaveType('WebHookEvents\RepositoryEvents\Entity\Author');
     }
 
     function it_can_getName()
